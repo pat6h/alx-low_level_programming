@@ -4,11 +4,14 @@
  * return: 0 (success)
  */
 int main(void) {
-	char start = 'a'
-	putchar(start);
+	char start = 'a';
 
-	for (char sh = start +1; ch <= 'z' ; ch==) {
-		puchar(char);
+	putchar(start)
+		
+	char ch;
+
+	for (char = start +1; ch <= 'z' ; ch++) {
+		puchar(ch);
 	}
 	putchar('\n')
 	

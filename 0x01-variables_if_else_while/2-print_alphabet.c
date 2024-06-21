@@ -3,14 +3,11 @@
  * main - program that prints the alphabet in lowercase, followed by a new line.
  * return: 0 (success)
  */
-int main(void) {
-	char start = 'a';
-
-	putchar(start)
+int main(void){
 		
 	char ch;
 
-	for (char = start +1; ch <= 'z' ; ch++) {
+	for (char = 'a'; ch <= 'z' ; ch++) {
 		puchar(ch);
 	}
 	putchar('\n')

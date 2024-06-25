@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <main.h>
 /**
- *  main - program that prints _putchar,
- * followed by a new line.
+ * main - program that prints _putchar,
+ * Return: Always 0 (Success)
  */
 int main(){
   char name[] = "_putchar\n";

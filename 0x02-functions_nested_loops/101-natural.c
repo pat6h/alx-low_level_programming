@@ -1,17 +1,30 @@
 #include <stdio.h>
-int main()
+
+/**
+ * main - computes and prints the sum of all the multiples
+ * of 3 or 5 below 1024
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-  int n = 1024, sum = 0;
-  int last_multiple_of_3 = n / 3 - 1;
-  int last_multiple_of_5 = n / 5 - 1;
+	unsigned long int sum3, sum5, sum;
+	int i;
 
-  sum += 3 * (last_multiple_of_3 + 1) * last_multiple_of_3 / 2;
-  sum += 5 * (last_multiple_of_5 + 1) * last_multiple_of_5 / 2;
+	sum3 = 0;
+	sum5 = 0;
+	sum = 0;
 
-  int last_multiple_of_15 = n / 15 - 1;
-  sum -= 15 * (last_multiple_of_15 + 1) * last_multiple_of_15 / 2;
-
-  printf("The sum of multiples of 3 or 5 below %d is: %d\n", n, sum);
-
-  return 0;
+	for (i = 0; i < 1024; ++i)
+	{
+		if ((i % 3) == 0)
+		{
+			sum3 = sum3 + i;
+		} else if ((i % 5) == 0)
+		{
+			sum5 = sum5 + i;
+		}
+	}
+	sum = sum3 + sum5;
+	printf("%lu\n", sum);
+	return (0);
 }

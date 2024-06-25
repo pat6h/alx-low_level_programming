@@ -10,6 +10,6 @@ int a = 0;
 do {
 putchar(name[a]);
 a++;
-}while (name[a] != '\0');
+} while (name[a] != '\0');
 return (0);
 }

@@ -7,10 +7,9 @@ int main(void)
 {
 char name[] = "_putchar\n";
 int a = 0;
-do
-{
+do{
 putchar(name[a]);
 a++;
-} while (name[a] != '\0');
+}while (name[a] != '\0');
 return 0;
 }

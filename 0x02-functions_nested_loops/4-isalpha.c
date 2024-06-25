@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*_islower -  in lowercase
+*_isalpha -  in lowercase
 *@c: the character to check
 *Return:0
 */

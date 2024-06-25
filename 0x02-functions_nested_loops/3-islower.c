@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 *_islower -  in lowercase
 *@c: the character to check

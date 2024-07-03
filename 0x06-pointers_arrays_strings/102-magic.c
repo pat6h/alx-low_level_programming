@@ -15,6 +15,7 @@ int main(void)
         /*
    * write your line of code here...
    * Remember:
+   *
    */
 *(p + 5) = 98;
         /* ...so that this prints 98\n */

@@ -18,7 +18,8 @@ if (ac == 0 || av == NULL)
 return (NULL);
 len = 0;
 for (i = 0; i < ac; i++)
-len += strlen(av[i]) + 1; /* + 1 for newline */
+len += strlen(av[i]);
+len += ac - 1;
 str = malloc(sizeof(char) * len);
 if (str == NULL)
 return (NULL);
@@ -27,6 +28,7 @@ for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j]; j++)
 str[index++] = av[i][j];
+if (i != ac - 1)
 str[index++] = '\n';
 }
 return (str);

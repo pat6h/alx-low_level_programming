@@ -1,29 +1,14 @@
-# 100-Makefile
-
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
-
-all: $(NAME)
-
-$(NAME): $(OBJ) m.h
+.PHONY: all clean oclean fclean re
+all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-main.o: main.c m.h
-	$(CC) -c main.c $(CFLAGS)
-
-school.o: school.c m.h
-	$(CC) -c school.c $(CFLAGS)
-
 clean:
 	$(RM) *~ $(NAME)
-
 oclean:
 	$(RM) $(OBJ)
-
 fclean: clean oclean
-
-re: fclean all
-
+re: oclean all
